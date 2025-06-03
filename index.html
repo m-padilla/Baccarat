@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+        Author: Marco Padilla
+        Date: 05/26/2024
+        Filename: index.html
+        Supporting Files: style.css, app.js
+        Modified by: Marco Padilla
+        Date Modified: 05/26/2024
+        -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Baccarat</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <h1 class="banner"><span>Baccarat</span></h1>
+        <article class="regular">
+            <div class="temp">
+                <label id="player">Player</label>
+                <label id="divider">|</label>
+                <label id="banker">Banker</label>
+            </div>
+            <div class="cards">
+               <br>
+                <span class="thirdcard">
+                <img src="/card_back.png" id="pcard3"/>
+                </span>
+
+                <img src="/card_back.png" id="pcard2"/>
+                <img src="/card_back.png" id="pcard1"/>
+                <span id="space"></span>
+                <img src="/card_back.png" id="bcard1"/>
+                <img src="/card_back.png" id="bcard2"/>
+                
+                <span class="thirdcard">
+                <img src="/card_back.png" id="bcard3"/>
+                </span>
+            </div>
+
+            <div class="buttons">
+                <button id="pbtn">Player</button>
+                <button id="tbtn">Tie</button>
+                <button id="bbtn">Banker</button>
+
+            </div>
+
+            <div class="scores">
+                <table>
+                    <tr>
+                        <td>Player: </td>
+                        <td id="pScore"></td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>Banker: </td>
+                        <td id="bScore"></td>             
+                    </tr>   
+                </table> 
+            </div>
+        </article>        
+        <script type="module" src="./app.js" defer></script>
+    </body>
+</html>
